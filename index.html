@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/src/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Website Portofolio</title>
+</head>
+<body class="bg-[#161513]">
+    <div class="flex justify-between bg-[#1E1E1D] w-full h-20 text-white items-center fixed top-0">
+        <img src="/assets/img/logo.png" alt="logo" class="w-18 h-18 ml-99">
+
+        <ul class="flex gap-20 mr-96">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="flex justify-center flex-col items-center mt-28 text-center my-8" id="home">
+        <img src="assets/img/dokja.jpg" alt="profile" class="w-48 rounded-full">
+        <h1 class="text-[#ffff] text-5xl font-extrabold mt-8">Hi, My Name Is <span class="bg-gradient-to-b from-blue-500 via-blue-600 to-yellow-400 bg-clip-text text-transparent">Ryan</span></h1>
+        <h1 class="text-[#ffff] text-5xl font-extrabold mt-4">I Do <span class="bg-gradient-to-l from-violet-800 to-orange-500 bg-clip-text text-transparent">Code</span> And I'd Like To Build <span class="bg-gradient-to-r from-violet-800 to-orange-500 bg-clip-text text-transparent">Something</span></h1>
+        <div class="mt-10 text-white font-[Poppins] font-extralight text-lg leading-relaxed mb-8">
+            <p class="tracking-wide">I am a Junior Python Developer with a strong foundation in programming.</p>
+            <p class="tracking-wide">Passionate about building solutions and writing clean, efficient code.</p>
+            <p class="tracking-wide">Eager to explore new technologies beyond Python to expand my skills.</p>
+            <p class="tracking-wide">Continuously learning and growing to become a versatile developer.</p>
+        </div>
+        <a href="#project" class="hover:bg-blue-600 hover:text-[#ffff] duration-200 easy-in color-[#161513] bg-[#ffff] py-4 px-6 rounded-4xl font-bold font-[Poppins] tracking-wide">Get In Touch</a>
+    </div>
+    <div class="flex justify-center items-center flex-col gap-10 mt-30">
+        <h4 class="text-2xl font-semibold text-white tracking-widest">EXPERIENCE WITH</h4>
+        <div class="flex gap-20">
+            <img src="assets/logo/piton.png" alt="Python" class="w-10 h-10">
+            <img src="assets/logo/html.png" alt="Html" class="w-10 h-11">
+            <img src="assets/logo/css.png" alt="Css" class="w-10 h-11">
+            <img src="assets/logo/php.png" alt="Php" class="w-18 h-10">
+            <img src="assets/logo/js.png" alt="Javascript" class="w-10 h-10">
+        </div>
+    </div>
+    <div class="flex flex-col items-center justify-center mt-28 gap-8" id="project">
+        <h4 class="text-4xl font-extrabold text-orange-500 tracking-wide">PROJECTS</h4>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="hover:shadow-xl hover:scale-105 transition bg-[#2A2A2A] w-90 h-74 rounded-t-2xl rounded-b-2xl text-white flex flex-col justify-center items-center">
+                <a href="#">
+                    <div class="w-full">
+                        <img src="assets/img/invitation.png" alt="Digital Invitation" class="w-full h-50 rounded-t-2xl">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="p-3 flex flex-col gap-1">
+                            <h3 class="text-xl font-bold">Digital Wedding Invitation</h3>
+                            <p class="text-sm text-[#C5C5C5]">Undangan pernikahan digital interaktif dengan desain elegan dan tampilan responsif</p>
+                        </div>
+                        <div class="p-3">
+                            <img src="assets/logo/arow.png" alt="arrow" class="w-12">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hover:shadow-xl hover:scale-105 transition bg-[#2A2A2A] w-90 h-74 rounded-t-2xl rounded-b-2xl text-white flex flex-col justify-center items-center">
+                <a href="#">
+                    <div class="w-full">
+                        <img src="assets/img/finger tracker.png" alt="Digital Invitation" class="w-full h-48 rounded-t-2xl">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="p-3 flex flex-col gap-1">
+                            <h3 class="text-xl font-bold">Finger Tracker Python</h3>
+                            <p class="text-xs text-[#C5C5C5]">Melacak pergerakan jari secara real-time. Dibangun dengan Python, OpenCV, dan MediaPipe untuk pengalaman interaktif dan responsif.</p>
+                        </div>
+                        <div class="p-3">
+                            <img src="assets/logo/arow.png" alt="arrow" class="w-16">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hover:shadow-xl hover:scale-105 transition bg-[#2A2A2A] w-90 h-74 rounded-t-2xl rounded-b-2xl text-white flex flex-col justify-center items-center">
+                <a href="#">
+                    <div class="w-full">
+                        <img src="assets/img/draw.png" alt="Digital Invitation" class="w-full h-48 rounded-t-2xl">
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="p-3 flex flex-col gap-1">
+                            <h3 class="text-xl font-bold">Python Virtual Painter</h3>
+                            <p class="text-xs text-[#C5C5C5]">Menggunakan MediaPipe untuk mendeteksi posisi tangan & jari secara real-time, OpenCV untuk menggambar di layar berdasarkan gerakan jari.</p>
+                        </div>
+                        <div class="p-3">
+                            <img src="assets/logo/arow.png" alt="arrow" class="w-18">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center mt-20">
+        <div class="text-black flex flex-col justify-center items-center bg-white p-10 gap-7 rounded-md shadow-md">
+            <h4 class="font-medium text-2xl">Contact Me</h4>
+            <form class="flex flex-col">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" name="nama" placeholder="Nama" class="border w-80 h-10 p-2 rounded-md">
+                <label for="email" class="mt-4">Email</label>
+                <input type="email" name="email" placeholder="Email" class="border w-80 h-10 p-2 rounded-md">
+                <label for="message" class="mt-4">Pesan</label>
+                <textarea name="message" id="message" placeholder="Pesan" class="border p-2 h-30 rounded-md"></textarea>
+                <button type="submit" class="w-80 bg-blue-900 mt-5 h-10 rounded-md text-white cursor-pointer">Kirim Pesan</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
