@@ -8,34 +8,35 @@
     <title>Website Portofolio</title>
 </head>
 <body class="bg-[#161513]">
-    <div class="flex justify-between bg-[#1E1E1D] w-full h-20 text-white items-center fixed top-0">
+    <div class="flex justify-between bg-[#1E1E1D] lg:w-full h-20 text-white items-center fixed top-0">
         <img src="/assets/img/logo.png" alt="logo" class="w-18 h-18 ml-99">
 
         <ul class="flex gap-20 mr-96">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" class="hover:text-blue-600">Home</a></li>
+            <li><a href="#" class="hover:text-blue-600">Project</a></li>
+            <li><a href="#" class="hover:text-blue-600">Experience</a></li>
+            <li><a href="#" class="hover:text-blue-600">Contact</a></li>
         </ul>
     </div>
     <div class="flex justify-center flex-col items-center mt-28 text-center my-8" id="home">
         <img src="assets/img/dokja.jpg" alt="profile" class="w-48 rounded-full">
-        <h1 class="text-[#ffff] text-5xl font-extrabold mt-8">Hi, My Name Is <span class="bg-gradient-to-b from-blue-500 via-blue-600 to-yellow-400 bg-clip-text text-transparent">Ryan</span></h1>
-        <h1 class="text-[#ffff] text-5xl font-extrabold mt-4">I Do <span class="bg-gradient-to-l from-violet-800 to-orange-500 bg-clip-text text-transparent">Code</span> And I'd Like To Build <span class="bg-gradient-to-r from-violet-800 to-orange-500 bg-clip-text text-transparent">Something</span></h1>
-        <div class="mt-10 text-white font-[Poppins] font-extralight text-lg leading-relaxed mb-8">
+        <h1 class="text-[#ffff] text-3xl sm:text-4xl md:text-5xl font-extrabold mt-8">Hi, My Name Is <span class="bg-gradient-to-b from-blue-500 via-blue-600 to-yellow-400 bg-clip-text text-transparent">Ryan</span></h1>
+        <h1 class="text-[#ffff] text-3xl sm:text-4xl md:text-5xl font-extrabold mt-4">I Do <span class="bg-gradient-to-l from-violet-800 to-orange-500 bg-clip-text text-transparent">Code</span> And I'd Like To Build <span class="bg-gradient-to-r from-violet-800 to-orange-500 bg-clip-text text-transparent">Something</span></h1>
+        <div class="mt-7 text-white font-[Poppins] w-full sm:w-[90%] md:w-[80%] lg:w-[70%] p-3 font-extralight text-sm sm:text-base md:text-lg leading-relaxed mb-8">
             <p class="tracking-wide">I am a Junior Python Developer with a strong foundation in programming.</p>
             <p class="tracking-wide">Passionate about building solutions and writing clean, efficient code.</p>
             <p class="tracking-wide">Eager to explore new technologies beyond Python to expand my skills.</p>
             <p class="tracking-wide">Continuously learning and growing to become a versatile developer.</p>
         </div>
-        <a href="#project" class="hover:bg-blue-600 hover:text-[#ffff] duration-200 easy-in color-[#161513] bg-[#ffff] py-4 px-6 rounded-4xl font-bold font-[Poppins] tracking-wide">Get In Touch</a>
+        <a href="#" class="hover:bg-blue-600 hover:text-[#ffff] duration-200 easy-in color-[#161513] bg-[#ffff] py-4 px-6 rounded-4xl font-bold font-[Poppins] tracking-wide">Get In Touch</a>
     </div>
-    <div class="flex justify-center items-center flex-col gap-10 mt-30">
+    <div class="flex justify-center items-center flex-col gap-10 mt-30" id="exp">
         <h4 class="text-2xl font-semibold text-white tracking-widest">EXPERIENCE WITH</h4>
         <div class="flex gap-20">
             <img src="assets/logo/piton.png" alt="Python" class="w-10 h-10">
             <img src="assets/logo/html.png" alt="Html" class="w-10 h-11">
             <img src="assets/logo/css.png" alt="Css" class="w-10 h-11">
+            <img src="assets/logo/tail.svg" alt="Tailwind" class="w-10 h-11">
             <img src="assets/logo/php.png" alt="Php" class="w-18 h-10">
             <img src="assets/logo/js.png" alt="Javascript" class="w-10 h-10">
         </div>
@@ -96,9 +97,38 @@
         </div>
     </div>
 
-    <div class="flex justify-center items-center mt-20">
+    <div class="mt-28 flex justify-center items-center flex-col">
+        <h4 class="text-4xl font-extrabold tracking-wide bg-gradient-to-b from-[#5BADFF] to-[#1373D1] bg-clip-text text-transparent">EXPERIENCE</h4>
+        <div class="text-white mt-8 flex flex-col justify-center items-center w-200">
+            <div class="flex items-center justify-between w-200">
+                <div class="flex justify-center items-center gap-5">
+                    <img src="assets/logo/SMK2.png" alt="SMKN 2 Banjarmasin" class="w-12">
+                    <h4 class="text-2xl font-bold">A Student In SMKN 2 Banjarmasin</h4>
+                </div>
+                <div class="text-white">
+                    <p>2023 - 2026</p>
+                </div>
+            </div>
+            <p class="mt-5 text-[#C5C5C5]">Menempuh pendidikan menengah kejuruan di SMKN 2 Banjarmasin dengan fokus pengembangan keterampilan di bidang teknologi dan informatika. Aktif mengikuti kegiatan sekolah serta proyek yang berhubungan dengan dunia digital dan pemrograman.</p>
+            
+            <div class="flex items-center justify-between w-200 mt-10">
+                <div class="flex justify-center items-center gap-5">
+                    <img src="assets/logo/pplg.png" alt="PPLG" class="w-12 rounded-3xl">
+                    <h4 class="text-2xl font-bold">Software and Game Development Major</h4>
+                </div>
+                <div class="text-white">
+                    <p>2023 - Now</p>
+                </div>
+            </div>
+            <p class="mt-5 text-[#C5C5C5]">Mendalami bidang pengembangan perangkat lunak dengan fokus pada pembuatan website dan aplikasi interaktif.
+Mempelajari dan menggunakan berbagai teknologi seperti HTML, CSS, Tailwind CSS, JavaScript, dan Python, serta menguasai dasar version control menggunakan Git dan GitHub untuk kolaborasi proyek.
+Terbiasa mengerjakan proyek berbasis praktik yang mengasah kemampuan logika, desain antarmuka, serta pengembangan sistem yang responsif dan efisien.</p>
+        </div>
+    </div>
+
+    <div class="flex justify-center items-center mt-30">
         <div class="text-black flex flex-col justify-center items-center bg-white p-10 gap-7 rounded-md shadow-md">
-            <h4 class="font-medium text-2xl">Contact Me</h4>
+            <h4 class="font-medium text-3xl">Contact Me</h4>
             <form class="flex flex-col">
                 <label for="nama">Nama Lengkap</label>
                 <input type="text" name="nama" placeholder="Nama" class="border w-80 h-10 p-2 rounded-md">
@@ -108,6 +138,32 @@
                 <textarea name="message" id="message" placeholder="Pesan" class="border p-2 h-30 rounded-md"></textarea>
                 <button type="submit" class="w-80 bg-blue-900 mt-5 h-10 rounded-md text-white cursor-pointer">Kirim Pesan</button>
             </form>
+        </div>
+    </div>
+
+    <div class="bg-[#191919] text-white flex justify-center items-center flex-col mt-20">
+        <div class="flex justify-center items-center flex-col py-14">
+            <div class="flex flex-col justify-center w-200">
+                <h4 class="text-2xl font-bold">Muhammad Riyandi</h4>
+                <p class="text-[#C5C5C5] mt-8">I have practical experience as a Junior Python Developer, focusing on clean and efficient code.<br>
+                    I continue to grow my expertise in software engineering to build reliable applications.<br>
+                    Passionate about learning new technologies, I aim to deliver impactful solutions.</p>
+                <div class="flex mt-6 items-center gap-2">
+                    <a href="#"><img src="assets/logo/mail.png" alt="Mail" class="w-6"></a>
+                    <p class="text-[#e7e6e6]"><a href="#">ryand18dev@gmail.com</a></p>
+                </div>
+                <div class="flex gap-8 mt-6">
+                    <a href="#"><img src="assets/logo/ig.png" alt="Instagram" class="w-10"></a>
+                    <a href="#"><img src="assets/logo/z.png" alt="X" class="w-10"></a>
+                    <a href="#"><img src="assets/logo/fb.png" alt="Facebook" class="w-10"></a>
+                    <a href="#"><img src="assets/logo/yt.png" alt="Youtube" class="w-10"></a>
+                </div>
+            </div>
+        </div>
+        <div class="flex mb-6">
+            <div>
+                <p>© 2025 Muhammad Riyandi. All rights reserved.</p>
+            </div>
         </div>
     </div>
 </body>
