@@ -8,31 +8,41 @@
     <title>Website Portofolio</title>
 </head>
 <body class="bg-[#161513]">
-    <div class="flex justify-between bg-[#1E1E1D] w-full h-20 text-white items-center fixed top-0 z-10">
-        <img src="assets/img/logo.png" alt="logo" class="w-18 h-18 ml-99">
+    <div class="flex justify-between bg-[#1E1E1D] w-full h-20 text-white items-center fixed top-0 z-10 lg:px-80 md:px-30">
+        <a href="#home" class="ml-5">
+            <img src="assets/img/logo.png" alt="logo" class="w-18 h-18">
+        </a>
 
-        <ul class="flex gap-20 lg:mr-96 md:mr-60 sm:none">
-            <li><a href="#" class="hover:text-blue-600">Home</a></li>
-            <li><a href="#" class="hover:text-blue-600">Project</a></li>
-            <li><a href="#" class="hover:text-blue-600">Experience</a></li>
-            <li><a href="#" class="hover:text-blue-600">Contact</a></li>
+        <!-- Cuma muncul di tampilan mobile -->
+        <button id="menu-btn" class="block md:hidden focus:outline-none mr-10">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <ul id="menu" class="hidden md:flex gap-20">
+            <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+            <li><a href="#project" class="hover:text-blue-600">Project</a></li>
+            <li><a href="#experience" class="hover:text-blue-600">Experience</a></li>
+            <li><a href="#contact-me" class="hover:text-blue-600">Contact</a></li>
         </ul>
     </div>
-    <div class="flex justify-center flex-col items-center mt-28 text-center my-8" id="home">
-        <img src="assets/img/dokja.jpg" alt="profile" class="w-48 rounded-full">
-        <h1 class="text-[#ffff] text-3xl sm:text-4xl md:text-5xl font-extrabold mt-8">Hi, My Name Is <span class="bg-gradient-to-b from-blue-500 via-blue-600 to-yellow-400 bg-clip-text text-transparent">Ryan</span></h1>
-        <h1 class="text-[#ffff] text-3xl sm:text-4xl md:text-5xl font-extrabold mt-4">I Do <span class="bg-gradient-to-l from-violet-800 to-orange-500 bg-clip-text text-transparent">Code</span> And I'd Like To Build <span class="bg-gradient-to-r from-violet-800 to-orange-500 bg-clip-text text-transparent">Something</span></h1>
-        <div class="mt-7 text-white font-[Poppins] w-full sm:w-[90%] md:w-[80%] lg:w-[70%] p-3 font-extralight text-sm sm:text-base md:text-lg leading-relaxed mb-8">
+    <div class="flex justify-center flex-col items-center text-center my-8" id="home">
+        <img src="assets/img/dokja.jpg" alt="profile" class="w-48 rounded-full mt-20">
+        <h1 class="text-[#ffff] text-2xl sm:text-4xl md:text-5xl font-extrabold mt-8">Hi, My Name Is <span class="bg-gradient-to-b from-blue-500 via-blue-600 to-yellow-400 bg-clip-text text-transparent">Ryan</span></h1>
+        <h1 class="text-[#ffff] text-2xl sm:text-4xl md:text-5xl font-extrabold mt-4">I Do <span class="bg-gradient-to-l from-violet-800 to-orange-500 bg-clip-text text-transparent">Code</span> And I'd Like To Build <span class="bg-gradient-to-r from-violet-800 to-orange-500 bg-clip-text text-transparent">Something</span></h1>
+        <div class="mt-7 text-white font-[Poppins] w-full sm:w-[90%] md:w-[80%] lg:w-[70%] p-3 font-extralight text-xs sm:text-base md:text-lg leading-relaxed mb-8">
             <p class="tracking-wide">I am a Junior Python Developer with a strong foundation in programming.</p>
             <p class="tracking-wide">Passionate about building solutions and writing clean, efficient code.</p>
             <p class="tracking-wide">Eager to explore new technologies beyond Python to expand my skills.</p>
             <p class="tracking-wide">Continuously learning and growing to become a versatile developer.</p>
         </div>
-        <a href="#" class="hover:bg-blue-600 hover:text-[#ffff] duration-200 easy-in color-[#161513] bg-[#ffff] py-4 px-6 rounded-4xl font-bold font-[Poppins] tracking-wide">Get In Touch</a>
+        <a href="#project" class="hover:bg-blue-600 hover:text-[#ffff] duration-200 easy-in color-[#161513] bg-[#ffff] py-4 px-6 rounded-4xl font-bold font-[Poppins] tracking-wide">Get In Touch</a>
     </div>
-    <div class="flex justify-center items-center flex-col gap-10 mt-30" id="exp">
-        <h4 class="text-2xl font-semibold text-white tracking-widest">EXPERIENCE WITH</h4>
-        <div class="flex gap-20">
+    <div class="flex justify-center items-center flex-col gap-10" id="exp">
+        <h4 class="text-2xl font-semibold text-white tracking-widest mt-30">EXPERIENCE WITH</h4>
+        <div class="grid grid-cols-3 gap-10 lg:grid-cols-6">
             <img src="assets/logo/piton.png" alt="Python" class="w-10 h-10">
             <img src="assets/logo/html.png" alt="Html" class="w-10 h-11">
             <img src="assets/logo/css.png" alt="Css" class="w-10 h-11">
@@ -41,8 +51,8 @@
             <img src="assets/logo/js.png" alt="Javascript" class="w-10 h-10">
         </div>
     </div>
-    <div class="flex flex-col items-center justify-center mt-28 gap-8" id="project">
-        <h4 class="text-4xl font-extrabold text-orange-500 tracking-wide">PROJECTS</h4>
+    <div class="flex flex-col items-center justify-center gap-8" id="project">
+        <h4 class="text-4xl font-extrabold text-orange-500 tracking-wide  mt-28">PROJECTS</h4>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="hover:shadow-xl hover:scale-105 transition bg-[#2A2A2A] w-90 h-74 rounded-t-2xl rounded-b-2xl text-white flex flex-col justify-center items-center">
                 <a href="#">
@@ -97,8 +107,8 @@
         </div>
     </div>
 
-    <div class="mt-28 flex justify-center items-center flex-col">
-        <h4 class="text-4xl font-extrabold tracking-wide bg-gradient-to-b from-[#5BADFF] to-[#1373D1] bg-clip-text text-transparent">EXPERIENCE</h4>
+    <div class=" flex justify-center items-center flex-col" id="experience">
+        <h4 class="text-4xl font-extrabold tracking-wide bg-gradient-to-b from-[#5BADFF] to-[#1373D1] bg-clip-text text-transparent mt-28">EXPERIENCE</h4>
         <div class="text-white mt-8 flex flex-col justify-center items-center w-200">
             <div class="flex items-center justify-between w-200">
                 <div class="flex justify-center items-center gap-5">
@@ -126,14 +136,14 @@ Terbiasa mengerjakan proyek berbasis praktik yang mengasah kemampuan logika, des
         </div>
     </div>
 
-    <div class="flex justify-center items-center mt-30">
-        <div class="text-black flex flex-col justify-center items-center bg-white p-10 gap-7 rounded-md shadow-md">
+    <div class="flex justify-center items-center" id="contact-me">
+        <div class="text-black flex flex-col justify-center items-center bg-white p-10 gap-7 rounded-md shadow-md mt-30">
             <h4 class="font-medium text-3xl">Contact Me</h4>
             <form class="flex flex-col">
                 <label for="nama">Nama Lengkap</label>
-                <input type="text" name="nama" placeholder="Nama" class="border w-80 h-10 p-2 rounded-md">
+                <input type="text" id="nama" name="nama" placeholder="Nama" class="border w-80 h-10 p-2 rounded-md">
                 <label for="email" class="mt-4">Email</label>
-                <input type="email" name="email" placeholder="Email" class="border w-80 h-10 p-2 rounded-md">
+                <input type="email" id="email" name="email" placeholder="Email" class="border w-80 h-10 p-2 rounded-md">
                 <label for="message" class="mt-4">Pesan</label>
                 <textarea name="message" id="message" placeholder="Pesan" class="border p-2 h-30 rounded-md"></textarea>
                 <button type="submit" class="w-80 bg-blue-900 mt-5 h-10 rounded-md text-white cursor-pointer">Kirim Pesan</button>
@@ -141,7 +151,7 @@ Terbiasa mengerjakan proyek berbasis praktik yang mengasah kemampuan logika, des
         </div>
     </div>
 
-    <div class="bg-[#191919] text-white flex justify-center items-center flex-col mt-20">
+    <div class="bg-[#191919] text-white flex justify-center items-center flex-col mt-20" id="contact">
         <div class="flex justify-center items-center flex-col py-14">
             <div class="flex flex-col justify-center w-200">
                 <h4 class="text-2xl font-bold">Muhammad Riyandi</h4>
@@ -166,5 +176,24 @@ Terbiasa mengerjakan proyek berbasis praktik yang mengasah kemampuan logika, des
             </div>
         </div>
     </div>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+
+        menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+        menu.classList.toggle('flex-col');
+        menu.classList.toggle('absolute');
+        menu.classList.toggle('top-20');
+        menu.classList.toggle('right-6');
+        menu.classList.toggle('bg-[#1E1E1D]');
+        menu.classList.toggle('p-6');
+        menu.classList.toggle('rounded-lg');
+        menu.classList.toggle('gap-6');
+        menu.classList.toggle('shadow-lg');
+        });
+    </script>
 </body>
 </html>
