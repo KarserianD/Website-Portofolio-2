@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,13 @@
     <title>Website Portofolio</title>
 </head>
 <body class="bg-[#161513]">
-    <div class="flex justify-between bg-[#1E1E1D] w-full h-20 text-white items-center fixed top-0 z-10 lg:px-80 md:px-30">
+    <div class="flex justify-between bg-[#1E1E1D] w-full h-20 text-white items-center fixed top-0 z-10 px-10 lg:px-80 md:px-30 sm:px-20">
         <a href="#home" class="ml-5">
             <img src="assets/img/logo.png" alt="logo" class="w-18 h-18">
         </a>
 
         <!-- Cuma muncul di tampilan mobile -->
-        <button id="menu-btn" class="block md:hidden focus:outline-none mr-10">
+        <button id="menu-btn" class="block md:hidden focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M4 6h16M4 12h16M4 18h16" />
@@ -28,6 +28,7 @@
             <li><a href="#contact-me" class="hover:text-blue-600">Contact</a></li>
         </ul>
     </div>
+
     <div class="flex justify-center flex-col items-center text-center my-8" id="home">
         <img src="assets/img/dokja.jpg" alt="profile" class="w-48 rounded-full mt-20">
         <h1 class="text-[#ffff] text-2xl sm:text-4xl md:text-5xl font-extrabold mt-8">Hi, My Name Is <span class="bg-gradient-to-b from-blue-500 via-blue-600 to-yellow-400 bg-clip-text text-transparent">Ryan</span></h1>
