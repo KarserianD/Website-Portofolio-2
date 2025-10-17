@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth overflow-x-hidden">
+<html lang="en" class="scroll-smooth overflow-x-hidden" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +7,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Website Portofolio</title>
 </head>
-<body class="bg-[#161513] light:bg-[#ffffff] overflow-x-hidden">
-    <div class="flex justify-between bg-[#1E1E1D] w-screen h-20 text-white items-center fixed top-0 z-10 px-10 lg:px-80 md:px-30 sm:px-20">
+<body class="bg-[#161513] light:bg-[#F3F8FE] overflow-x-hidden">
+    <div class="flex justify-between bg-[#1E1E1D] light:bg-[#111111] w-screen h-20 text-white items-center fixed top-0 z-10 px-10 lg:px-80 md:px-30 sm:px-20">
         <a href="#home" class="">
             <img src="assets/img/logo.png" alt="logo" class="w-18 h-18">
         </a>
 
-        <!-- Cuma muncul di tampilan mobile -->
         <button id="menu-btn" class="block md:hidden focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -22,27 +21,35 @@
         </button>
 
         <ul id="menu" class="hidden md:flex gap-20">
-            <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-            <li><a href="#project" class="hover:text-blue-600">Project</a></li>
-            <li><a href="#experience" class="hover:text-blue-600">Experience</a></li>
-            <li><a href="#contact-me" class="hover:text-blue-600">Contact</a></li>
+            <li><a href="#home" class="hover:text-[#3B82F6] hover:border-b-1 duration-200 ease-in">Home</a></li>
+            <li><a href="#project" class="hover:text-[#3B82F6] hover:border-b-1 duration-200 ease-in">Project</a></li>
+            <li><a href="#experience" class="hover:text-[#3B82F6] hover:border-b-1 duration-200 ease-in">Experience</a></li>
+            <li><a href="#contact-me" class="hover:text-[#3B82F6] hover:border-b-1 duration-200 ease-in">Contact</a></li>
         </ul>
     </div>
 
     <div class="flex justify-center flex-col items-center text-center my-8" id="home">
         <img src="assets/img/dokja.jpg" alt="profile" class="w-48 rounded-full mt-20">
-        <h1 class="text-[#ffff] light:text-black text-2xl sm:text-4xl md:text-5xl font-extrabold mt-8">Hi, My Name Is <span class="bg-gradient-to-b from-blue-500 via-blue-600 to-yellow-400 bg-clip-text text-transparent">Ryan</span></h1>
-        <h1 class="text-[#ffff] light:text-black text-2xl sm:text-4xl md:text-5xl font-extrabold mt-4">I Do <span class="bg-gradient-to-l from-violet-800 to-orange-500 bg-clip-text text-transparent">Code</span> And I'd Like To Build <span class="bg-gradient-to-r from-violet-800 to-orange-500 bg-clip-text text-transparent">Something</span></h1>
-        <div class="mt-7 text-white light:text-black light:font-medium font-[Poppins] w-full sm:w-[90%] md:w-[80%] lg:w-[70%] p-3 font-extralight text-xs sm:text-base md:text-lg leading-relaxed mb-8">
+        <h1 class="text-[#ffff] light:text-[#3A3A3A] text-2xl sm:text-4xl md:text-5xl font-extrabold mt-8">Hi, My Name Is <span class="bg-gradient-to-b from-blue-500 via-blue-600 to-yellow-400 bg-clip-text text-transparent">Ryan</span></h1>
+        <h1 class="text-[#ffff] light:text-[#3A3A3A] text-2xl sm:text-4xl md:text-5xl font-extrabold mt-4">I Do <span class="bg-gradient-to-l from-violet-800 to-orange-500 bg-clip-text text-transparent">Code</span> And I'd Like To Build <span class="bg-gradient-to-r from-violet-800 to-orange-500 bg-clip-text text-transparent">Something</span></h1>
+        <div class="mt-7 text-white light:text-[#3A4646] light:font-medium font-[Poppins] w-full sm:w-[90%] md:w-[80%] lg:w-[70%] p-3 font-extralight text-xs sm:text-base md:text-lg leading-relaxed mb-8">
             <p class="tracking-wide">I am a Junior Python Developer with a strong foundation in programming.</p>
             <p class="tracking-wide">Passionate about building solutions and writing clean, efficient code.</p>
             <p class="tracking-wide">Eager to explore new technologies beyond Python to expand my skills.</p>
             <p class="tracking-wide">Continuously learning and growing to become a versatile developer.</p>
         </div>
-        <a href="#project" class="hover:bg-blue-600 hover:text-[#ffff] duration-200 ease-in color-[#161513] bg-[#ffff] light:bg-[#2A2A2A] light:text-[#ffff] py-4 px-6 rounded-4xl font-bold font-[Poppins] tracking-wide">Get In Touch</a>
+        <a href="#project" class="hover:bg-[#3B82F6] hover:text-[#ffff] duration-200 ease-in color-[#161513] bg-[#ffff] light:bg-[#2A2A2A] light:text-[#ffff] py-4 px-6 rounded-4xl font-bold font-[Poppins] tracking-wide">Get In Touch</a>
     </div>
+
+    <div class="flex items-end fixed right-4 bottom-4">
+        <div class="flex flex-col gap-3">
+            <button id="light-toggle" class="ml-4 p-2 bg-[#eaeaea] text-yellow-400 rounded-lg">☀️</button>
+            <button id="dark-toggle" class="ml-4 p-2 bg-[#121211] text-yellow-400 rounded-lg">🌙</button>
+        </div>
+    </div>
+
     <div class="flex justify-center items-center flex-col gap-10" id="exp">
-        <h4 class="text-2xl font-semibold light:text-black text-white tracking-widest mt-30">EXPERIENCE WITH</h4>
+        <h4 class="text-2xl font-semibold light:text-[#3A3A3A] text-white tracking-widest mt-30">EXPERIENCE WITH</h4>
         <div class="grid grid-cols-3 gap-10 lg:grid-cols-6">
             <img src="assets/logo/piton.png" alt="Python" class="w-10 h-10">
             <img src="assets/logo/html.png" alt="Html" class="w-10 h-11">
@@ -152,15 +159,6 @@ Terbiasa mengerjakan proyek berbasis praktik yang mengasah kemampuan logika, des
         </div>
     </div>
 
-    <div>
-        <div>
-            <button id="light-toggle" class="ml-4 p-2 bg-[#1E1E1D] text-yellow-400 rounded-lg">☀️</button>
-        </div>
-        <div>
-            <button id="dark-toggle" class="ml-4 p-2 bg-[#1E1E1D] text-yellow-400 rounded-lg">🌙</button>
-        </div>
-    </div>
-
     <div class="bg-[#191919] text-white flex justify-center items-center flex-col mt-20" id="contact">
         <div class="flex justify-center items-center flex-col py-14">
             <div class="flex flex-col justify-center w-full px-60">
@@ -194,13 +192,20 @@ Terbiasa mengerjakan proyek berbasis praktik yang mengasah kemampuan logika, des
         const toggleLight = document.getElementById('light-toggle');
         const toggleDark = document.getElementById('dark-toggle');
 
+        if (localStorage.getItem('theme') === 'light') {
+            html.classList.add('light');
+        } else {
+            html.classList.remove('light');
+        }
+
         toggleLight.addEventListener('click', () => {
             html.classList.add('light');
-            toggleBtn.textContent = html.classList.contains('light') ? '☀️' : '🌙';
+            localStorage.setItem('theme', 'light');
         });
 
         toggleDark.addEventListener('click', () => {
             html.classList.remove('light');
+            localStorage.setItem('theme', 'dark');
         });
 
 
